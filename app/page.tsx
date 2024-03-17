@@ -6,6 +6,8 @@ import secUnion from "./components/svg/secUnion.svg";
 import Puzzle from "./components/Puzzle";
 import DarkPattern from "./components/DarkPattern";
 import Sustainable from "./components/Sustainable";
+import Assistance from "./components/Assistance";
+import DarkMode from "./components/DarkMode";
 export default function Home() {
   return (
     <div className="w-full text-white relative ">
@@ -17,6 +19,8 @@ export default function Home() {
       <div className="h-[300vh] relative">
         <DarkPattern />
         <Sustainable />
+        <Assistance />
+        <DarkMode />
         <Image
           alt=""
           className="absolute top-40   left-0 w-full"
