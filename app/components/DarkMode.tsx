@@ -17,11 +17,11 @@ const DarkMode = () => {
         <Image src={logo} alt="" className="" />
       </div>
       <div className="flex-1 flex justify-center items-start flex-col gap-6">
-        <div className="text-[200px] font-light -space-y-24">
-          <h1>Dark</h1>
+        <div className="text-[200px]  -space-y-24">
+          <h1 >Dark</h1>
           <h1>Mode</h1>
         </div>
-        <p className="text-[29px] text-balance font-thin">
+        <p className="text-[29px] text-balance font-thin opacity-60">
           Customize ClearFlow with our sleek dark mode, perfect for late night
           browsing.
         </p>
