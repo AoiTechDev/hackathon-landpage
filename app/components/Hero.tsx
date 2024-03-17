@@ -1,8 +1,9 @@
+import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
   return (
-    <div className="w-full max-w-7xl mx-auto flex justify-center items-center  h-screen">
+    <div className="w-full max-w-7xl mx-auto flex justify-center items-center  h-screen relative">
       <div className=" flex-1 text-[190px]">
         <h1 className="leading-[10rem] font-light">
           Clear <span className="font-bold italic">Flow</span>
@@ -20,6 +21,7 @@ const Hero = () => {
           <span className="text-black font-bold">Get started today!</span>
         </div>
       </div>
+      
     </div>
   );
 };

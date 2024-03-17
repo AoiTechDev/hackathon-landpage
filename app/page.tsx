@@ -1,18 +1,28 @@
 import Image from "next/image";
 import Hero from "./components/Hero";
 
-import union from './components/svg/union.svg'
+import union from "./components/svg/union.svg";
+import secUnion from "./components/svg/secUnion.svg";
 import Puzzle from "./components/Puzzle";
 import DarkPattern from "./components/DarkPattern";
+import Sustainable from "./components/Sustainable";
 export default function Home() {
   return (
-    <div className="w-full   text-white relative min-h-screen">
+    <div className="w-full text-white relative ">
       <Hero />
-      
+
       <span className="w-full block h-[1px] bg-green"></span>
       <Puzzle />
-      <DarkPattern/>
-      <Image alt="" className="absolute  top-40 left-20 w-full"  src={union}/>
-    </div> 
+      <Image alt="" className="absolute top-40  left-32 w-[95%] " src={union} />
+      <div className="h-[300vh] relative">
+        <DarkPattern />
+        <Sustainable />
+        <Image
+          alt=""
+          className="absolute top-40   left-0 w-full"
+          src={secUnion}
+        />
+      </div>
+    </div>
   );
 }
