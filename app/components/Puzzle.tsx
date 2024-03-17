@@ -8,7 +8,7 @@ const Puzzle = () => {
       <div className=" w-[730px] space-y-10">
         <h2 className="text-[39px] ">
           {" "}
-          ClearFlow is your <span className="text-green">game-changer</span> when it comes to online
+          ClearFlow is your <span className="bg-gradient-to-r from-yellow   to-green inline-block text-transparent bg-clip-text font-bold">game-changer</span> when it comes to online
           shopping
         </h2>
         <p className="font-light text-balance">
@@ -17,7 +17,7 @@ const Puzzle = () => {
         </p>
       </div>
       <div className="relative  z-0">
-        <Image src={puzzle} alt="" />
+        <Image src={puzzle} alt="" className=""/>
         <Image src={mouse} alt="" className="absolute bottom-[3px] -right-[10px]" />
       </div>
     </div>
