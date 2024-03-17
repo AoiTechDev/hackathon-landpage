@@ -5,7 +5,7 @@ const DarkPattern = () => {
     <div className="w-full flex items-end justify-end pr-52">
       <div className="w-[420px] space-y-10">
         <h2 className="text-[39px] font-semibold">Dark Pattern Removal</h2>
-        <p className="text-[19px] font-thin">
+        <p className="text-[19px] opacity-60">
           Say goodbye to sneaky tactics used by online stores. ClearFlow clears
           out hidden terms, fake reviews, and distracting offers, giving you
           clarity while shopping.{" "}

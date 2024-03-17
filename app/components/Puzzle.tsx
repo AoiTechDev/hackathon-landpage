@@ -11,7 +11,7 @@ const Puzzle = () => {
           ClearFlow is your <span className="bg-gradient-to-r from-yellow   to-green inline-block text-transparent bg-clip-text font-bold">game-changer</span> when it comes to online
           shopping
         </h2>
-        <p className="text-[19px] font-thin text-balance">
+        <p className="text-[19px] opacity-60 font-[100] text-balance">
           Make smarter, eco-friendly choices and ditch the manipulative tactics
           with our user-friendly plugin
         </p>
