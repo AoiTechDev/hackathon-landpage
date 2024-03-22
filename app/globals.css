@@ -39,3 +39,17 @@
   border-right: 2px solid #6eff00;
   border-top-right-radius: 80px;
 }
+.bottom_right{
+  border-top: 0;
+  border-right:2px solid #6eff00;
+  border-left: 0;
+  border-bottom: 2px solid #6eff00;
+  border-bottom-right-radius: 80px;
+}
+.top_left{
+  border-top: 2px solid #6eff00;
+  border-right: 0;
+  border-left: 2px solid #6eff00;
+  border-bottom: 0;
+  border-top-left-radius: 80px;
+}

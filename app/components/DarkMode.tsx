@@ -4,15 +4,9 @@ import React from "react";
 import logo from "./svg/logo.svg";
 import triangle from "./svg/triangle.svg";
 const DarkMode = () => {
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth", // Optional: smooth scrolling behavior
-    });
-  }
-
+  
   return (
-    <div className="w-full max-w-[1400px] mx-auto h-[100vh] flex flex-col min-[1200px]:flex-row justify-center items-center relative p-2">
+    <div className="w-full max-w-[1400px] mx-auto mt-64 flex flex-col min-[1200px]:flex-row justify-center items-center relative p-2">
       <div className="flex-1 hidden justify-center items-center min-[1200px]:flex">
         <Image src={logo} alt="" className="scale-75" />
       </div>
@@ -35,12 +29,7 @@ const DarkMode = () => {
         Customize ClearFlow with our sleek dark mode, perfect for late night
         browsing.
       </p>
-      <Image
-        src={triangle}
-        alt=""
-        className="absolute bottom-12 right-12 w-24 cursor-pointer"
-        onClick={scrollToTop}
-      />
+     
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 
 const Assistance = () => {
   return (
-    <div className="max-w-[600px] mx-auto  mt-[600px] space-y-10 text-center">
+    <div className="max-w-[600px] mx-auto  mt-[500px] space-y-10 text-center">
       <h2 className="bg-gradient-to-r from-yellow   to-green inline-block text-transparent bg-clip-text text-[52px] font-semibold">
         Expert Chat Assistance
       </h2>
