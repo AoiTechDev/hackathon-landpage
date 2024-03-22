@@ -4,9 +4,9 @@ import Hone from "./svg/Hone.svg";
 import Link from "next/link";
 const Hero = () => {
   return (
-    <div className="w-full max-w-7xl mx-auto flex  flex-col min-[1200px]:flex-row justify-center items-center  h-screen relative ">
+    <div className="w-full max-w-7xl mx-auto flex  flex-col min-[1200px]:flex-row justify-center items-center  h-screen relative z-10">
       <div className=" min-[1200px]:flex-1 mt-24 min-[1200px]:mt-0">
-        <Image src={Hone} alt="" className="scale-75 sm:scale-100" />
+        <Image src={Hone} alt="" className="scale-75 sm:scale-100 " />
       </div>
       <div className="min-[1200px]:flex-1 h-full flex flex-col justify-center items-center min-[1200px]:items-start gap-[40px] min-[1200px]:gap-[80px]">
         <p className="font-thin opacity-60 text-[14px] ">GREEN EXTENSION</p>
