@@ -20,8 +20,8 @@ export default function Home() {
       <div className="h-[200vh] relative">
         <DarkPattern />
         <Sustainable />
-        {/* <Assistance />
-        <DarkMode /> */}
+        <Assistance />
+        {/* <DarkMode /> */}
         {/* <Image
           alt=""
           className="absolute top-40   left-0 w-full"
