@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="min-[1200px]:flex-1 h-full flex flex-col justify-center items-center min-[1200px]:items-start gap-[40px] min-[1200px]:gap-[80px]">
         <p className="font-thin opacity-60 text-[14px] ">GREEN EXTENSION</p>
         <div className="space-y-[40px]">
-          <h2 className="text-[39px] text-center min-[1200px]:text-start">
+          <h2 className="text-4xl text-center text-balance min-[1200px]:text-start">
             Shopping just got a whole lot brighter!
           </h2>
           <p className="text-2xl opacity-60 font-thin text-balance text-center min-[1200px]:text-start">

@@ -14,7 +14,7 @@ export default function Home() {
       <Hero />
 
       <span className="w-full block h-[1px] bg-green"></span>
-      {/* <Puzzle /> */}
+      <Puzzle />
       {/* <Image alt="" className="absolute top-40  left-32 w-[95%] " src={union} /> */}
       
       {/* <div className="h-[200vh] relative">
