@@ -17,11 +17,11 @@ export default function Home() {
       <Puzzle />
       {/* <Image alt="" className="absolute top-40  left-32 w-[95%] " src={union} /> */}
       
-      <div className="h-[200vh] relative">
+      <div className="min-[1200px]:h-[100vh] relative">
         <DarkPattern />
         <Sustainable />
         <Assistance />
-        {/* <DarkMode /> */}
+        <DarkMode />
         {/* <Image
           alt=""
           className="absolute top-40   left-0 w-full"
