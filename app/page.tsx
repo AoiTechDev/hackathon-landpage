@@ -17,17 +17,17 @@ export default function Home() {
       <Puzzle />
       {/* <Image alt="" className="absolute top-40  left-32 w-[95%] " src={union} /> */}
       
-      {/* <div className="h-[200vh] relative">
+      <div className="h-[200vh] relative">
         <DarkPattern />
         <Sustainable />
-        <Assistance />
-        <DarkMode />
-        <Image
+        {/* <Assistance />
+        <DarkMode /> */}
+        {/* <Image
           alt=""
           className="absolute top-40   left-0 w-full"
           src={secUnion}
-        />
-      </div> */}
+        /> */}
+      </div>
     </div>
   );
 }
