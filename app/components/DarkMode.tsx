@@ -6,9 +6,9 @@ import triangle from "./svg/triangle.svg";
 const DarkMode = () => {
   
   return (
-    <div className="w-full max-w-[1400px] mx-auto mt-64 flex flex-col min-[1200px]:flex-row justify-center items-center relative p-2">
+    <div className="w-full max-w-[1400px] mx-auto mt-40 min-[1200px]:mt-64 flex flex-col min-[1200px]:flex-row justify-center items-center relative p-2">
       <div className="flex-1 hidden justify-center items-center min-[1200px]:flex">
-        <Image src={logo} alt="" className="scale-75" />
+        <Image src={logo} alt="" className="scale-75 min-[1200px]:scale-100" />
       </div>
 
       <div className="min-[1200px]:flex-1 flex justify-center items-center min-[1200px]:items-start min-[1200px]:flex-col gap-6">

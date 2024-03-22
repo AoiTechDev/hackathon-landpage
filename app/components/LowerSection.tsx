@@ -1,11 +1,12 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import DarkPattern from "./DarkPattern";
 import Sustainable from "./Sustainable";
 import Assistance from "./Assistance";
 import DarkMode from "./DarkMode";
 import Image from "next/image";
 import triangle from "./svg/triangle.svg";
+import useScreenSize from "@/hooks/useScreenSize";
 const LowerSection = () => {
   function scrollToTop() {
     window.scrollTo({
@@ -13,7 +14,7 @@ const LowerSection = () => {
       behavior: "smooth", // Optional: smooth scrolling behavior
     });
   }
-
+  const screenSize = useScreenSize();
   const vertical1 = React.useRef<HTMLDivElement>(null);
   const vertical2 = React.useRef<HTMLDivElement>(null);
   const vertical3 = React.useRef<HTMLDivElement>(null);
@@ -23,8 +24,18 @@ const LowerSection = () => {
   const horizontal2 = React.useRef<HTMLDivElement>(null);
   const horizontal3 = React.useRef<HTMLDivElement>(null);
   const horizontal4 = React.useRef<HTMLDivElement>(null);
+  const bottomArrow = React.useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const ver4 = vertical4.current?.getBoundingClientRect().left;
+    const distanceVer4 = ver4! - 0;
+    if (bottomArrow.current) {
+      bottomArrow.current.style.left = `calc(${distanceVer4}px - ${bottomArrow.current.offsetWidth/2}px + 1px)`;
+    }
+  }, [screenSize]);
+
   return (
-    <div className="min-[1200px]:h-[280vh] relative ">
+    <div className="h-[190vh]  min-[1200px]:h-[280vh] relative ">
       <DarkPattern />
       <Sustainable />
       <Assistance />
@@ -77,11 +88,17 @@ const LowerSection = () => {
       ></div>
 
       <div
-        ref={vertical1}
+        ref={vertical4}
         className="bg-green w-[2px] h-[315px] absolute top-[490px] left-[67.7vw] hidden min-[1200px]:block"
       ></div>
 
       <div className="w-[35vw] h-[100px] absolute top_left top-[420px]    left-[67.7vw] hidden min-[1200px]:block"></div>
+
+      <div className="w-0 h-0 triangle rotate-90 absolute left-[10vw]  top-[90px] -z-1 hidden min-[1200px]:block"></div>
+      <div
+        ref={bottomArrow}
+        className="w-0 h-0 triangle rotate-180 absolute left-[66vw] top-[600px] -z-1 hidden min-[1200px]:block"
+      ></div>
     </div>
   );
 };

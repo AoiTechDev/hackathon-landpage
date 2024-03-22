@@ -22,15 +22,14 @@ export default function Home() {
   const bottomLeft = React.useRef<HTMLDivElement>(null);
   const diamondUp = React.useRef<HTMLDivElement>(null);
   const diamondDown = React.useRef<HTMLDivElement>(null);
-
- 
+  const bottomArrow = React.useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const middle = horizontalRight.current?.getBoundingClientRect().left;
     const left = horizontalLeft.current?.getBoundingClientRect().left;
 
     const distanceMiddle = middle! - 0;
-    const distanceLeft = left! - 0; 
+    const distanceLeft = left! - 0;
 
     if (bottomRight.current) {
       bottomRight.current.style.left = `calc(${distanceMiddle}px + ${horizontalRight.current?.offsetWidth}px - 2px)`;
@@ -45,6 +44,10 @@ export default function Home() {
       diamondUp.current.style.left = `calc(${distanceLeft}px - ${
         diamondUp.current.offsetWidth / 2
       }px + 1px)`;
+    }
+
+    if (bottomArrow.current) {
+      bottomArrow.current.style.left = `calc(${distanceMiddle}px + ${bottomArrow.current.offsetWidth}px + 9px)`;
     }
   }, [screenSize]);
 
@@ -85,9 +88,14 @@ export default function Home() {
         ></div>
       </div>
 
+      <div
+        ref={bottomArrow}
+        className="w-0 h-0 triangle rotate-180 absolute left-[51.6vw] top-[1400px] -z-1 hidden min-[1200px]:block"
+      ></div>
+
       {/* <Image alt="" className="absolute top-40  left-32 w-[95%] " src={union} /> */}
 
-     <LowerSection/>
+      <LowerSection />
     </div>
   );
 }
