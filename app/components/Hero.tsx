@@ -19,7 +19,7 @@ const Hero = () => {
           </p>
         </div>
         <Link
-          href="https://files.fm/f/sbp2bpeucp"
+          href="https://uploadnow.io/f/w0WJFft"
           target="_blank"
           className="justify-center flex items-center bg-gradient-to-r from-yellow to-green py-5 px-11 rounded-[94px] z-10 cursor-pointer"
         >
